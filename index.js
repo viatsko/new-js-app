@@ -82,7 +82,7 @@ for (const templateFile of templateFiles) {
 }
 
 // Replacing some stuff in package.json
-const packageJsonPath = path.join(templateDir, 'package.json');
+const packageJsonPath = path.join(dirToCreatePath, 'package.json');
 
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath));
 
@@ -94,7 +94,7 @@ fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 log(`${newJsAppBanner} ${chalk.green('Updating package.json... OK')}\n`);
 
 // Replacing author name in LICENSE file
-const licensePath = path.join(templateDir, 'LICENSE');
+const licensePath = path.join(dirToCreatePath, 'LICENSE');
 
 fs.writeFileSync(licensePath,
   fs.readFileSync(licensePath, { encoding: 'utf8' }).replace(/##AUTHOR##/, gitUserName)
