@@ -2,19 +2,19 @@
 
 JavaScript applications bootstrap made easy.
 
-Installation:
+## Installation
 
 `npm install -g new-js-app`
 
-To create new js app, just run:
+## To create new js app, just run
 
 `new-js-app <dir>`
 
-Example:
+## Example
 
 `new-js-app playground`
 
-What will be installed:
+## What's included
 
 * .editorconfig (2 spaces settings)
 
@@ -26,4 +26,4 @@ What will be installed:
 
 * package.json
 
-Your git username and email will be used for LICENSE and package.json.
+Your *git username* and *email* will be used for LICENSE and package.json.
