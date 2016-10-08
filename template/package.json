@@ -1,0 +1,13 @@
+{
+  "name": "xx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "repository": "",
+  "author": "Valerii Iatsko <dwr@codingbox.io>",
+  "license": "MIT"
+}
