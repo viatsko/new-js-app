@@ -1,6 +1,6 @@
 {
   "name": "new-js-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy way to quickly bootstrap js applications",
   "main": "index.js",
   "bin": {
