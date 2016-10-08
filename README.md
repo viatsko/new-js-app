@@ -32,4 +32,6 @@ I was tired of editing/moving configs again and again to create a simple nodejs 
 
 Your *git username* and *email* will be used for LICENSE and package.json.
 
+Example app created using new-js-app: [https://github.com/viatsko/new-js-app-example](https://github.com/viatsko/new-js-app-example)
+
 ![](https://raw.githubusercontent.com/viatsko/new-js-app/master/new-js-app.jpg)
