@@ -43,4 +43,16 @@ fs.mkdirSync(dirToCreatePath);
 
 log(`${chalk.black.bgBlue(' new-js-app ')} ${chalk.green('Project directory created.')}\n`);
 
+// Template files
+const templateFiles = fs.readdirSync(templateDir);
+
+for (const templateFile of templateFiles) {
+  const destFrom = path.join(templateDir, templateFile);
+  const destTo = path.join(dirToCreatePath, templateFile);
+
+  fs.writeFileSync(destTo, fs.readFileSync(destFrom));
+
+  log(`${chalk.black.bgBlue(' new-js-app ')} ${chalk.green(`Creating ${templateFile}... OK`)}\n`);
+}
+
 log('\n');
