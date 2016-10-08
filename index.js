@@ -102,6 +102,15 @@ fs.writeFileSync(licensePath,
 
 log(`${newJsAppBanner} ${chalk.green('Updating LICENSE... OK')}\n`);
 
+// Replacing package name in README.md file
+const readmePath = path.join(dirToCreatePath, 'README.md');
+
+fs.writeFileSync(readmePath,
+  fs.readFileSync(readmePath, { encoding: 'utf8' }).replace(/##PACKAGE##/, dirToCreate)
+);
+
+log(`${newJsAppBanner} ${chalk.green('Updating LICENSE... OK')}\n`);
+
 // Running jest installation
 log(`${newJsAppBanner} ${chalk.green('Installing jest...')}\n`);
 execSync(

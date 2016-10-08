@@ -2,6 +2,8 @@
 
 JavaScript applications bootstrap made easy.
 
+I was tired of editing/moving configs again and again to create a simple nodejs app, so I created this simple tool.
+
 ## Installation
 
 `npm install -g new-js-app`
@@ -23,6 +25,8 @@ JavaScript applications bootstrap made easy.
 * .gitignore
 
 * LICENSE (MIT)
+
+* README.md
 
 * package.json
 

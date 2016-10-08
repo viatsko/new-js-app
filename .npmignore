@@ -1,4 +1,7 @@
 .gitignore
 .editorconfig
 .eslintrc.js
+!template/.gitignore
+!template/.editorconfig
+!template/.eslintrc.js
 new-js-app.jpg
