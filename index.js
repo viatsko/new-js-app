@@ -2,6 +2,7 @@
 
 // Dependencies
 const chalk = require('chalk');
+const execSync = require('child_process').execSync;
 const fs = require('fs');
 const path = require('path');
 
@@ -54,5 +55,14 @@ for (const templateFile of templateFiles) {
 
   log(`${chalk.black.bgBlue(' new-js-app ')} ${chalk.green(`Creating ${templateFile}... OK`)}\n`);
 }
+
+// Running eslint installation
+log(`${chalk.black.bgBlue(' new-js-app ')} ${chalk.green('Installing eslint config...')}\n`);
+execSync(
+  'npm info eslint-config-airbnb peerDependencies --json | ' +
+  'command sed \'s/[\{\},]//g ; s/: /@/g\' | xargs npm install --save-dev eslint-config-airbnb', { // eslint-disable-line
+    cwd: dirToCreatePath,
+  });
+log(`${chalk.black.bgBlue(' new-js-app ')} ${chalk.green('Finished installing eslint config!')}\n`);
 
 log('\n');
