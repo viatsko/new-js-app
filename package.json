@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Easy way to quickly bootstrap js applications",
   "main": "index.js",
+  "bin": {
+    "new-js-app": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
