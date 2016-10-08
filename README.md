@@ -2,6 +2,10 @@
 
 JavaScript applications bootstrap made easy.
 
+Installation:
+
+`npm install -g new-js-app`
+
 To create new js app, just run:
 
 `new-js-app <dir>`
