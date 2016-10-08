@@ -27,3 +27,5 @@ JavaScript applications bootstrap made easy.
 * package.json
 
 Your *git username* and *email* will be used for LICENSE and package.json.
+
+![](https://raw.githubusercontent.com/viatsko/new-js-app/master/new-js-app.jpg)
